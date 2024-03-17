@@ -1,0 +1,16 @@
+.search-form {
+    width: 100%;
+    max-width: 300px;
+
+    & input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 6px;
+        border: 1px solid var(--primary);
+        outline-color: var(--primary-hover);
+    }
+
+    @media screen and (max-width: 640px) {
+        max-width: 100%;
+    }
+}

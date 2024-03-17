@@ -1,0 +1,12 @@
+.users-list {
+    display: flex;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 20px;
+
+    &__empty {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+}

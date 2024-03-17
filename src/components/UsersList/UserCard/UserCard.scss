@@ -1,0 +1,62 @@
+.user-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    width: calc(25% - 15px);
+    min-height: 300px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex-grow: 1;
+
+        & a {
+            display: block;
+        }
+
+        color: var(--primary);
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__link {
+        padding: 10px 0;
+        color: var(--primary);
+        transition: color;
+
+        @media (hover: hover) {
+            &:hover {
+                color: var(--primary-hover);
+            }
+        }
+
+        &:active {
+            color: var(--primary-hover);
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: calc(33.33% - 14px);
+    }
+
+    @media screen and (max-width: 768px) {
+        width: calc(50% - 14px);
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+    }
+}

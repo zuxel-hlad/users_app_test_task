@@ -1,0 +1,29 @@
+.select {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+
+    & select {
+        width: 100%;
+        padding: 15px;
+        border-radius: 6px;
+        border: 1px solid var(--primary);
+        outline-color: var(--primary-hover);
+
+        & option {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        max-width: 100%;
+    }
+}
